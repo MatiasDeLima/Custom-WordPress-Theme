@@ -1348,6 +1348,8 @@ button {
   position: relative;
   height: 400px;
   background-color: var(--orange-color);
+  justify-content: center;
+  display: grid;
 }
 
 .contact__container {
@@ -1355,7 +1357,7 @@ button {
 }
 
 .contact__data {
-  width: 300px;
+  text-align: center;
 }
 
 .contact__image {
@@ -1604,6 +1606,15 @@ button {
   .contact {
     height: 350px;
     margin-top: 8rem;
+  }
+
+  .contact__data {
+    text-align: initial;
+    margin-left: 180px;
+  }
+
+  .contact {
+    justify-content: flex-start;
   }
 }
 
