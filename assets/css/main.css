@@ -1040,6 +1040,19 @@ button {
   width: 140px;
   bottom: -2rem;
   left: -1rem;
+  animation: analizeimage 3s infinite;
+}
+
+@keyframes analizeimage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* Video Component */
@@ -1228,6 +1241,7 @@ button {
   position: absolute;
   bottom: -1rem;
   left: -1rem;
+  animation: analizeimage 3s infinite;
 }
 
 .demo__data-infos {
@@ -1443,10 +1457,10 @@ button {
 .footer__social-link {
   display: inline-flex;
   background: #8f98a0;
-  padding: 0.25rem;
-  border-radius: 0.25rem;
+  padding: 0.45rem;
+  border-radius: 0.35rem;
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.4rem;
   margin-bottom: 1.5rem;
 }
 
