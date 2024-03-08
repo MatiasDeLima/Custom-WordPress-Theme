@@ -8,7 +8,13 @@
             </p>
             <form class="contact__form">
                 <input type="text" name="" id="" placeholder="Enter Your Email..." class="contact__input">
-                <button class="contact__button">Subscribe</button>
+                <button href="#" class="button button-flex">
+                    <a href="#" class="text">Send</a>
+
+                    <div class="button__icon">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </div>
+                </button>
             </form>
         </div>
 
