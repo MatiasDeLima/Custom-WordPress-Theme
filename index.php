@@ -7,7 +7,7 @@ get_header();
 get_template_part('template-parts/header');
 ?>
 
-<?php
+<!-- <?php
     $args = array(
         'category_name' => 'testemonials', // Substitua 'nome-da-categoria' pelo slug da categoria desejada
         'posts_per_page' => -1 // Para mostrar todos os posts da categoria, defina como -1
@@ -31,7 +31,7 @@ get_template_part('template-parts/header');
     //         get_template_part('template-parts/post/content');
     //     endwhile;
     // endif;
-?>
+?> -->
 
 <main class="main" id="main">
     <section class="hero">
@@ -50,16 +50,19 @@ get_template_part('template-parts/header');
                     effortlessly acquiring new vocabulary and grammar.
                 </p>
 
-                <a href="#" class="button button-flex">
-                    Start 7-days for free trial
+                <button href="#" class="button button-flex">
+                    <a href="#" class="text">Start 7-days for free trial</a>
 
                     <div class="button__icon">
                         <i class="ri-arrow-right-up-line"></i>
                     </div>
-                </a>
+                </button>
             </div>
 
             <div class="hero__image">
+                <!-- BG Circle -->
+                <div class="hero__bg-circle"></div>
+
                 <!-- Geometrys -->
                 <div class="geometry green-geometry geometry-1"></div>
                 <div class="geometry yellow-geometry geometry-2"></div>
@@ -365,13 +368,13 @@ get_template_part('template-parts/header');
                                 filtered based on chosen definition
                             </p>
 
-                            <a href="#" class="button button-flex">
-                                Learn More
+                            <button href="#" class="button button-flex">
+                                <a href="#" class="text">Learn More</a>
 
                                 <div class="button__icon">
                                     <i class="ri-arrow-right-up-line"></i>
                                 </div>
-                            </a>
+                            </button>
                         </div>
                     </article>
                 </div>
@@ -405,13 +408,13 @@ get_template_part('template-parts/header');
                                 if the word has multiple meanings, only the relevant meaning is displayed.
                             </p>
 
-                            <a href="#" class="button button-flex">
-                                Learn More
+                            <button href="#" class="button button-flex">
+                                <a href="#" class="text">Learn More</a>
 
                                 <div class="button__icon">
                                     <i class="ri-arrow-right-up-line"></i>
                                 </div>
-                            </a>
+                            </button>
                         </div>
                     </article>
                 </div>
@@ -445,13 +448,13 @@ get_template_part('template-parts/header');
                                 appropriate for your level, whether beginner, intermediate or advanced
                             </p>
 
-                            <a href="#" class="button button-flex">
-                                Learn More
+                            <button href="#" class="button button-flex">
+                                <a href="#" class="text">Learn More</a>
 
                                 <div class="button__icon">
                                     <i class="ri-arrow-right-up-line"></i>
                                 </div>
-                            </a>
+                            </button>
                         </div>
                     </article>
                 </div>
@@ -484,13 +487,13 @@ get_template_part('template-parts/header');
                                 of the meaning of the sentence and the grammatical points used.
                             </p>
 
-                            <a href="#" class="button button-flex">
-                                Learn More
+                            <button href="#" class="button button-flex">
+                                <a href="#" class="text">Learn More</a>
 
                                 <div class="button__icon">
                                     <i class="ri-arrow-right-up-line"></i>
                                 </div>
-                            </a>
+                            </button>
                         </div>
                     </article>
                 </div>
@@ -523,13 +526,13 @@ get_template_part('template-parts/header');
                                 breakdown of a video before watching it.
                             </p>
 
-                            <a href="#" class="button button-flex">
-                                Learn More
+                            <button href="#" class="button button-flex">
+                                <a href="#" class="text">Learn More</a>
 
                                 <div class="button__icon">
                                     <i class="ri-arrow-right-up-line"></i>
                                 </div>
-                            </a>
+                            </button>
                         </div>
                     </article>
                 </div>
@@ -563,13 +566,13 @@ get_template_part('template-parts/header');
                                 vocabulary.
                             </p>
 
-                            <a href="#" class="button button-flex">
-                                Learn More
+                            <button href="#" class="button button-flex">
+                                <a href="#" class="text">Learn More</a>
 
                                 <div class="button__icon">
                                     <i class="ri-arrow-right-up-line"></i>
                                 </div>
-                            </a>
+                            </button>
                         </div>
                     </article>
                 </div>
@@ -603,13 +606,13 @@ get_template_part('template-parts/header');
                                 methods
                             </p>
 
-                            <a href="#" class="button button-flex">
-                                Learn More
+                            <button href="#" class="button button-flex">
+                                <a href="#" class="text">Learn More</a>
 
                                 <div class="button__icon">
                                     <i class="ri-arrow-right-up-line"></i>
                                 </div>
-                            </a>
+                            </button>
                         </div>
                     </article>
                 </div>
@@ -722,13 +725,13 @@ get_template_part('template-parts/header');
                     import tool. Also, get a difficult breakdown of a video before watching it.
                 </p>
 
-                <a href="#" class="button button-flex">
-                    Learn More
+                <button href="#" class="button button-flex">
+                    <a href="#" class="text">Learn More</a>
 
                     <div class="button__icon">
                         <i class="ri-arrow-right-up-line"></i>
                     </div>
-                </a>
+                </button>
             </div>
         </div>
     </section>
@@ -784,13 +787,13 @@ get_template_part('template-parts/header');
                     </div>
                 </div>
 
-                <a href="#" class="button button-flex">
-                    Learn More
+                <button href="#" class="button button-flex">
+                    <a href="#" class="text">Learn More</a>
 
                     <div class="button__icon">
                         <i class="ri-arrow-right-up-line"></i>
                     </div>
-                </a>
+                </button>
 
             </div>
 
@@ -915,13 +918,13 @@ get_template_part('template-parts/header');
                                 from your native language, youll begin to think in Japanese.
                             </p>
 
-                            <a href="#" class="button button-flex">
-                                Learn More
+                            <button href="#" class="button button-flex">
+                                <a href="#" class="text">Learn More</a>
 
                                 <div class="button__icon">
                                     <i class="ri-arrow-right-up-line"></i>
                                 </div>
-                            </a>
+                            </button>
                         </div>
                     </article>
                 </div>
@@ -951,13 +954,13 @@ get_template_part('template-parts/header');
                                 you can choose videos appropriate for your level
                             </p>
 
-                            <a href="#" class="button button-flex">
-                                Learn More
+                            <button href="#" class="button button-flex">
+                                <a href="#" class="text">Learn More</a>
 
                                 <div class="button__icon">
                                     <i class="ri-arrow-right-up-line"></i>
                                 </div>
-                            </a>
+                            </button>
                         </div>
                     </article>
                 </div>
@@ -986,25 +989,25 @@ get_template_part('template-parts/header');
                                 speaker from Youtube videos, you learn how people speak in real life
                             </p>
 
-                            <a href="#" class="button button-flex">
-                                Learn More
+                            <button href="#" class="button button-flex">
+                                <a href="#" class="text">Learn More</a>
 
                                 <div class="button__icon">
                                     <i class="ri-arrow-right-up-line"></i>
                                 </div>
-                            </a>
+                            </button>
                         </div>
                     </article>
                 </div>
             </div>
 
-            <a href="#" class="advantages__button button button-flex">
-                More About Platform
+            <button href="#" class="advantages__button button button-flex">
+                <a href="#" class="text">More About Platform</a>
 
                 <div class="button__icon">
                     <i class="ri-arrow-right-up-line"></i>
                 </div>
-            </a>
+            </button>
         </div>
     </section>
 </main>
