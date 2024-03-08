@@ -27,7 +27,7 @@
   /*========== Font and typography ==========*/
   --title-font: "Bungee", sans-serif;
   --body-font: "Poppins", sans-serif;
-  --biggest-font-size: 2rem;
+  --biggest-font-size: 2.5rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
@@ -145,11 +145,120 @@ button {
 /*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
-  padding: 1rem 2rem;
   background-color: var(--orange-color);
   color: #fff;
   border-radius: 5rem;
   transition: 0.3s;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+}
+
+.text {
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 140%;
+  color: #fff;
+  overflow: hidden;
+  height: 20px;
+  font-weight: 500;
+}
+
+.button:hover .text .letter,
+.text.play .letter {
+  transform: translateY(-100%);
+}
+
+.text .block:last-child {
+  color: #fff;
+}
+
+.text .letter {
+  display: inline-block;
+  transition: transform 0.6s cubic-bezier(0.75, 0, 0.024, 1);
+}
+
+.letter:nth-child(1) {
+  transition-delay: 0s;
+}
+.letter:nth-child(2) {
+  transition-delay: 0.03s;
+}
+.letter:nth-child(3) {
+  transition-delay: 0.06s;
+}
+.letter:nth-child(4) {
+  transition-delay: 0.09s;
+}
+.letter:nth-child(5) {
+  transition-delay: 0.12s;
+}
+.letter:nth-child(6) {
+  transition-delay: 0.15s;
+}
+.letter:nth-child(7) {
+  transition-delay: 0.18s;
+}
+.letter:nth-child(8) {
+  transition-delay: 0.21s;
+}
+.letter:nth-child(9) {
+  transition-delay: 0.24s;
+}
+.letter:nth-child(10) {
+  transition-delay: 0.27s;
+}
+.letter:nth-child(11) {
+  transition-delay: 0.3s;
+}
+.letter:nth-child(12) {
+  transition-delay: 0.33s;
+}
+.letter:nth-child(13) {
+  transition-delay: 0.36s;
+}
+.letter:nth-child(14) {
+  transition-delay: 0.39s;
+}
+.letter:nth-child(15) {
+  transition-delay: 0.42s;
+}
+.letter:nth-child(16) {
+  transition-delay: 0.45s;
+}
+.letter:nth-child(17) {
+  transition-delay: 0.48s;
+}
+.letter:nth-child(18) {
+  transition-delay: 0.51s;
+}
+.letter:nth-child(19) {
+  transition-delay: 0.54s;
+}
+.letter:nth-child(20) {
+  transition-delay: 0.57s;
+}
+.letter:nth-child(21) {
+  transition-delay: 0.6s;
+}
+.letter:nth-child(22) {
+  transition-delay: 0.63s;
+}
+.letter:nth-child(23) {
+  transition-delay: 0.66s;
+}
+.letter:nth-child(24) {
+  transition-delay: 0.69s;
+}
+.letter:nth-child(25) {
+  transition-delay: 0.72s;
+}
+.letter:nth-child(26) {
+  transition-delay: 0.75s;
+}
+.letter:nth-child(27) {
+  transition-delay: 0.78s;
 }
 
 .button:hover {
@@ -253,9 +362,9 @@ button {
   .nav__menu {
     position: fixed;
     width: 100%;
+    height: 100vh;
     top: 0;
     right: -100%;
-    height: 100%;
     background-color: var(--body-color);
     padding-block: 8rem 2rem;
     transition: right 0.3s;
@@ -368,6 +477,30 @@ button {
   justify-content: center;
 }
 
+.hero__bg-circle {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: -1;
+  filter: blur(300px);
+  transition: .3s;
+  animation: shadow 4s infinite;
+}
+
+@keyframes shadow {
+  0% {
+    filter: blur(100px);
+  }
+  50% {
+    filter: blur(300px);
+  }
+  100% {
+    filter: blur(100px);
+  }
+}
+
 /* Rate Component */
 .rate__component {
   scale: 0.8;
@@ -377,6 +510,19 @@ button {
   border-radius: 0.5rem;
   bottom: -1.5rem;
   left: -1rem;
+  animation: ratecomponent 3s infinite;
+}
+
+@keyframes ratecomponent {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1.5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .rate__users img {
@@ -433,6 +579,19 @@ button {
   column-gap: 0.5rem;
   padding: 0.5rem 0.8rem;
   scale: 0.7;
+  animation: ratecomponent 3s infinite;
+}
+
+@keyframes laguage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(1rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .language__icon-icon {
@@ -472,6 +631,7 @@ button {
   column-gap: 0.5rem;
   padding: 0.5rem 0.8rem;
   scale: 0.6;
+  animation: laguage 3s infinite;
 }
 
 .language__icon-orange {
@@ -497,6 +657,7 @@ button {
   border-radius: 0.5rem;
   box-shadow: 0px 12px 32px 0px rgba(4, 23, 46, 0.116);
   transform: rotate(-20deg);
+  animation: ratecomponent 3s infinite;
 }
 
 /* Component Advantage */
@@ -511,6 +672,7 @@ button {
   box-shadow: 0px 12px 60px 0px rgba(2, 3, 24, 0.06);
   right: 0;
   bottom: -2rem;
+  animation: laguage 3s infinite;
 }
 
 .hero__advantages-title {
@@ -631,6 +793,7 @@ button {
 
 /*=============== TESTEMONIALS ===============*/
 .testimonials__container {
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -808,10 +971,12 @@ button {
 
 /* Swiper Class */
 .features__content.swiper {
-  /* width: 100%; */
   height: 100%;
-  overflow: hidden;
   padding: 4rem 0;
+}
+
+.swiper {
+  overflow: visible;
 }
 
 .swiper .swiper-slide {
@@ -1113,6 +1278,7 @@ button {
 .advantages__content {
   row-gap: 2rem;
   margin-bottom: 3rem;
+  justify-content: center;
 }
 
 .advantages__card {
@@ -1161,6 +1327,7 @@ button {
 
 .advantages__card-title {
   margin-bottom: 1rem;
+  margin-right: 2rem;
   color: var(--dark-color);
   font-size: 1rem;
 }
@@ -1168,7 +1335,7 @@ button {
 .advantages__card-text {
   line-height: 21px;
   margin-bottom: 3rem;
-  font-size: .875rem;
+  font-size: 0.875rem;
 }
 
 .advantages__button {
@@ -1331,11 +1498,11 @@ button {
 .scrollup__icon {
   font-size: 1.25rem;
   color: var(--dark-color);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .scrollup:hover .scrollup__icon {
-  transform: translateY(-.25rem);
+  transform: translateY(-0.25rem);
 }
 
 /* Show Scroll Up*/
@@ -1344,14 +1511,14 @@ button {
 }
 
 /*=============== SCROLL BAR ===============*/
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 0.6rem;
   background: #413e3e;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background: #272525;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 /*=============== MEDIA QUERIES ===============*/
@@ -1506,14 +1673,14 @@ button {
   .demo__description {
     line-height: 24px;
     margin-bottom: 3rem;
-  } 
+  }
 
   .analize-img {
     width: 160px;
     left: -5rem;
   }
 
-  .demo-img  {
+  .demo-img {
     width: 100px;
     left: -4rem;
   }
