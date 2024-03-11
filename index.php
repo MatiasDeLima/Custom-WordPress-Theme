@@ -166,7 +166,7 @@ get_template_part('template-parts/header');
                     </a>
                 </div>
 
-                <img src="<?= get_template_directory_uri() . '/assets/images/hero-img.png' ?>" alt="" class="hero__img">
+                <img src="<?= get_template_directory_uri() . '/assets/images/hero-image-2.png' ?>" alt="" class="hero__img">
 
             </div>
         </div>
