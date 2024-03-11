@@ -19,7 +19,17 @@
         </div>
 
         <div class="contact__image">
-            <img src="<?= get_template_directory_uri() . '/assets/images/contact-img.png' ?>" alt=""
+            <div class="contact__image-circle circle-1">
+                <i class="ri-star-s-fill"></i>
+            </div>
+            <div class="contact__image-circle circle-2">
+                <i class="ri-heart-3-fill"></i>
+            </div>
+            <div class="contact__image-circle circle-3">
+                <i class="ri-calendar-fill"></i>
+            </div>
+
+            <img src="<?= get_template_directory_uri() . '/assets/images/cta-image.png' ?>" alt=""
                 class="contact__img">
         </div>
     </div>

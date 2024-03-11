@@ -273,6 +273,13 @@ button {
   border-radius: 5rem;
   color: var(--dark-color);
   font-weight: var(--font-medium);
+  transition: background .3s;
+}
+
+.button-ghost:hover {
+  background-color: var(--orange-color);
+  border: transparent;
+  color: #fff;
 }
 
 .button-flex {
@@ -335,6 +342,11 @@ button {
 .scroll-header .header-button-ghost {
   color: var(--dark-color);
   border: 1px solid var(--dark-color);
+}
+
+.scroll-header .header-button-ghost:hover {
+  color: #fff;
+  border: none;
 }
 
 .nav {
@@ -1380,11 +1392,82 @@ button {
 
 .contact__image {
   position: absolute;
-  width: 200px;
+  width: 150px;
   top: -6rem;
   left: 50%;
   transform: translateX(-50%);
   right: 1rem;
+}
+
+.contact__image-circle {
+  position: absolute;
+  width: 32px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.contact__image-circle i {
+  font-size: 1rem;
+}
+
+.circle-1 {
+  right: -3rem;
+  bottom: 5rem;
+  background-color: var(--green-color);
+  animation: circle1 3s infinite;
+}
+
+@keyframes circle1 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.circle-2 {
+  left: 1rem;
+  top: -1rem;
+  background-color: var(--yellow-color);
+  animation: circle2 2s infinite;
+}
+
+@keyframes circle2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.circle-3 {
+  left: -2rem;
+  bottom: 4rem;
+  background-color: var(--blue-color);
+  animation: circle3 3s infinite;
+}
+
+@keyframes circle3 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(1rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .contact__title {
