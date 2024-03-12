@@ -1723,9 +1723,8 @@ button {
   }
 
   .contact__image {
-    width: 550px;
-    right: 100px;
-    transform: translateY(-8rem);
+    width: 400px;
+    transform: translate(6rem, -5rem);
   }
 
   .contact {
@@ -1734,8 +1733,9 @@ button {
   }
 
   .contact__data {
+    margin-left: 130px;
+    transform: translateY(-.5rem);
     text-align: initial;
-    margin-left: 180px;
   }
 
   .contact {
